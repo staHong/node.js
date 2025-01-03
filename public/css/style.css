@@ -1,0 +1,406 @@
+/* contact-form 스타일 - 폼 디자인 */
+.contact-form {
+    max-width: 800px; /* 최대 너비 800px */
+    margin: 20px auto; /* 중앙 정렬 */
+    padding: 20px;
+    background-color: #fff; /* 배경색 흰색 */
+    border-radius: 8px; /* 둥근 테두리 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.contact-form .form-section h2 {
+    font-size: 24px; /* 제목 크기 */
+    color: #333; /* 제목 색상 */
+    margin-bottom: 20px; /* 제목과 입력창 간격 */
+    text-align: center; /* 제목 중앙 정렬 */
+}
+
+.contact-form ul {
+    list-style-type: none; /* 기본 점 목록 제거 */
+    padding: 0;
+}
+
+.contact-form li {
+    font-size: 18px; /* 글자 크기 */
+    margin-bottom: 15px; /* 항목 간 간격 */
+}
+
+.contact-form label {
+    font-weight: bold; /* 라벨 텍스트 강조 */
+    display: block; /* 라벨을 블록 요소로 만들어 줄 바꿈 효과 */
+    margin-bottom: 5px; /* 라벨과 입력창 간 간격 */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* 입력창과 텍스트 영역의 너비를 100%로 설정 */
+    padding: 10px;
+    border: 1px solid #ddd; /* 테두리 색 */
+    border-radius: 5px; /* 둥근 테두리 */
+    font-size: 16px; /* 글자 크기 */
+}
+
+.contact-form textarea {
+    resize: vertical; /* 텍스트 영역 크기 조절 가능하게 설정 */
+}
+
+.contact-form button {
+    background-color: #3498db; /* 파란색 버튼 */
+    color: #fff; /* 흰색 글씨 */
+    padding: 12px 25px; /* 버튼 안쪽 여백 */
+    font-size: 18px; /* 글자 크기 */
+    border: none; /* 테두리 없애기 */
+    border-radius: 5px; /* 둥근 테두리 */
+    cursor: pointer; /* 커서 모양을 포인터로 */
+    transition: background-color 0.3s ease; /* 배경색 변환 효과 */
+    width: 100%; /* 버튼 너비 100% */
+}
+
+.contact-form button:hover {
+    background-color: #2980b9; /* 버튼 hover 시 색상 변경 */
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 15px; /* 작은 화면에서 폼의 여백을 줄임 */
+    }
+
+    .contact-form button {
+        font-size: 16px; /* 작은 화면에서는 버튼 글씨 크기 줄이기 */
+    }
+}
+ /* 페이지 제목 스타일 */
+ .page-title {
+    text-align: center; /* 제목 중앙 정렬 */
+    font-size: 32px; /* 제목 크기 */
+    color: #333; /* 제목 색상 */
+    margin-bottom: 20px; /* 제목과 테이블 간 간격 */
+}
+
+/* 테이블 스타일 */
+.contact-table {
+    width: 90%; /* 테이블 너비 90%로 설정 */
+    margin: 20px auto; /* 테이블 중앙 정렬 */
+    border-collapse: collapse; /* 테이블 경계선 겹침 방지 */
+    background-color: #fff; /* 테이블 배경색 흰색 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 테이블 그림자 */
+}
+
+.contact-table th,
+.contact-table td {
+    padding: 12px; /* 셀 안쪽 여백 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+    border: 1px solid #ddd; /* 테두리 */
+}
+
+.contact-table th {
+    background-color: #f1f1f1; /* 헤더 배경색 */
+    font-size: 18px; /* 헤더 글자 크기 */
+    color: #333; /* 헤더 글자 색 */
+}
+
+.contact-table td {
+    font-size: 16px; /* 데이터 셀 글자 크기 */
+    color: #555; /* 데이터 셀 글자 색 */
+}
+
+.contact-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* 짝수 행 배경색 */
+}
+
+.contact-table tr:hover {
+    background-color: #f1f1f1; /* 마우스를 올렸을 때 행 배경색 */
+}
+
+/* 삭제 링크 스타일 */
+.delete-link {
+    color: #e74c3c; /* 빨간색 */
+    font-weight: bold; /* 두꺼운 글씨 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+    cursor: pointer; /* 커서를 포인터로 변경 */
+}
+
+.delete-link:hover {
+    color: #c0392b; /* hover 시 색상 변경 */
+}
+
+@media (max-width: 768px) {
+    .contact-table {
+        width: 100%; /* 화면이 작은 경우 테이블 너비 100% */
+    }
+
+    .contact-table th, .contact-table td {
+        font-size: 14px; /* 작은 화면에서 글자 크기 줄이기 */
+        padding: 8px; /* 작은 화면에서 셀 여백 줄이기 */
+    }
+
+    .page-title {
+        font-size: 28px; /* 작은 화면에서 제목 크기 줄이기 */
+    }
+}
+
+/* 전체적인 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* 미디어 쿼리 (반응형 디자인) */
+@media (max-width: 768px) {
+    nav {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        padding: 10px 15px;
+    }
+
+    .main-content {
+        padding: 0 10px;
+    }
+}
+/* 전체적인 스타일 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* 헤더 스타일 */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 내비게이션 바 스타일 */
+nav {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+}
+
+/* 링크 스타일 */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    padding: 12px 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* 링크 호버 스타일 */
+nav a:hover {
+    background-color: #3498db;
+    transform: translateY(-2px);
+}
+
+/* 로그인/로그아웃 관련 스타일 */
+.user-info {
+    font-weight: 700;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.login-link {
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+/* 미디어 쿼리 (반응형 디자인) */
+@media (max-width: 768px) {
+    nav {
+        font-size: 16px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        padding: 10px 15px;
+    }
+
+    .main-content {
+        padding: 0 10px;
+    }
+}
+
+.main-image {
+    width: 100%;          /* 부모 요소의 너비에 맞춰 이미지를 꽉 차게 함 */
+    height: 100vh;        /* 화면 전체 높이를 채움 */
+    object-fit: cover;    /* 이미지 비율을 유지하면서 화면을 꽉 채움 */
+    display: block;       /* 이미지 주위에 여백이 생기지 않도록 */
+    margin: 0;            /* 이미지 주변 여백 제거 */
+}
+
+/* 로그인 페이지 컨테이너 스타일 */
+.login-container {
+    width: 100%;
+    max-width: 400px; /* 로그인 폼 너비 최대 400px */
+    margin: 50px auto; /* 화면 중앙 정렬 */
+    padding: 20px;
+    background-color: #f9f9f9; /* 배경색 */
+    border-radius: 8px; /* 둥근 모서리 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+/* 로그인 폼 제목 */
+.login-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* 로그인 폼 목록 스타일 */
+.login-list {
+    list-style: none;
+    padding: 0;
+}
+
+.login-list li {
+    margin-bottom: 15px; /* 각 항목 간 간격 */
+}
+
+/* 입력 필드 스타일 */
+input[type="text"], input[type="password"] {
+    width: 100%; /* 입력 필드 너비 100% */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* 테두리 */
+    border-radius: 4px; /* 둥근 모서리 */
+    box-sizing: border-box; /* 패딩이 너비에 포함되도록 */
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #007bff; /* 포커스 시 테두리 색 변경 */
+    outline: none; /* 포커스시 기본 테두리 제거 */
+}
+
+/* 버튼 스타일 */
+.login-button {
+    width: 100%; /* 버튼 너비 100% */
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* 파란색 배경 */
+    border: none;
+    border-radius: 4px; /* 둥근 모서리 */
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3; /* 호버 시 배경색 변경 */
+}
+
+/* 작은 화면에서 폼 크기 조정 */
+@media (max-width: 480px) {
+    .login-container {
+        width: 90%; /* 화면이 작을 때 너비 90% */
+    }
+}
+
+/* location-info 스타일 - 프로필과 같은 스타일로 맞춤 */
+.location-info {
+    background-color: #fff; /* 배경색을 흰색으로 설정 */
+    padding: 20px; /* 패딩을 추가해 내용과 테두리 사이에 여백을 둡니다. */
+    margin: 20px auto; /* 중앙 정렬하고 위/아래 여백을 추가 */
+    max-width: 800px; /* 최대 너비를 800px로 설정 */
+    border-radius: 8px; /* 테두리를 둥글게 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.location-info h2 {
+    font-size: 24px;
+    color: #333; /* 제목 색상 */
+    margin-bottom: 15px; /* 제목과 리스트 항목 간의 간격 */
+}
+
+.location-info ul {
+    list-style-type: none; /* 기본 점 목록을 제거 */
+    padding: 0; /* 패딩 제거 */
+}
+
+.location-info li {
+    font-size: 18px; /* 글씨 크기 */
+    line-height: 1.6; /* 줄 간격을 넓혀서 가독성을 높임 */
+    padding: 8px 0; /* 리스트 항목 간의 간격 */
+    border-bottom: 1px solid #eee; /* 항목 간에 가벼운 구분선 */
+}
+
+.location-info li:last-child {
+    border-bottom: none; /* 마지막 항목에는 구분선 제거 */
+}
+
+.location-info ul ul {
+    padding-left: 20px; /* 교통편 내부 목록을 왼쪽으로 들여쓰기 */
+}
+
+.location-info strong {
+    font-weight: bold; /* 강조할 부분에 bold 적용 */
+}
+
+/* 프로필 페이지와 동일한 스타일을 유지하기 위한 추가 설정 */
+.location-info ul li, .profile-info ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 10px 0;
+}
+
+.location-info h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.contact-info {
+    background-color: #fff; /* 배경색을 흰색으로 설정 */
+    padding: 20px; /* 패딩을 추가해 내용과 테두리 사이에 여백을 둡니다. */
+    margin: 20px auto; /* 중앙 정렬하고 위/아래 여백을 추가 */
+    max-width: 600px; /* 최대 너비를 600px로 설정 */
+    border-radius: 8px; /* 테두리를 둥글게 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    color: #333; /* 제목 색상 */
+    margin-bottom: 15px; /* 제목과 리스트 항목 간의 간격 */
+}
+
+.contact-info ul {
+    list-style-type: none; /* 기본 점 목록을 제거 */
+    padding: 0; /* 패딩 제거 */
+}
+
+.contact-info li {
+    font-size: 18px; /* 글씨 크기 */
+    line-height: 1.6; /* 줄 간격을 넓혀서 가독성을 높임 */
+    padding: 8px 0; /* 리스트 항목 간의 간격 */
+    border-bottom: 1px solid #eee; /* 항목 간에 가벼운 구분선 */
+}
+
+.contact-info li:last-child {
+    border-bottom: none; /* 마지막 항목에는 구분선 제거 */
+}

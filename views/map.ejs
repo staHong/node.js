@@ -1,11 +1,19 @@
-<%-include('header.ejs')%> 
-    
+<%- include('header.ejs') %> 
 
-    <ul>
-        <li> 찾아오시는길 </li>        
-        <li> 경기도 파주로 오시면 됩니다. </li>
-        
-    </ul>
+    <div class="location-info">
+        <h2>찾아오시는 길</h2>
+        <ul>
+            <li><strong>주소:</strong> 06101 서울특별시 강남구 언주로 620 현대인텔렉스 빌딩 10층 (5, 11층)</li>
+            <li><strong>Tel:</strong> 02-3467-7200 | <strong>FAX:</strong> 02-852-3777</li>
+            <li><strong>교통편:</strong> 
+                <ul>
+                    <li>7호선 학동역 1번 출구</li>
+                    <li>9호선 선정릉역 1번 출구</li>
+                    <li>9호선 언주역 4번 출구</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
+<%- include('footer.ejs') %>     
 
-<%-include('footer.ejs')%>     

@@ -1,13 +1,23 @@
-<%-include('header.ejs')%> 
-    
-<form action="/loginProc" method="post" >
-    <ul>
-        <li> 로그인 </li>                
-         <li> 아이디 : <input type="text" name="user_id"  required ></li>
-         <li> 비밀번호 : <input type="password" name="pw" required></li>
-         
-        <button>로그인</button>
-    </ul>
-</form>
+<%- include('header.ejs') %> 
 
-<%-include('footer.ejs')%>     
+<div class="login-container">
+    <h1 class="login-title">로그인</h1>
+    
+    <form action="/loginProc" method="post" class="login-form">
+        <ul class="login-list">
+            <li>
+                <label for="user_id">아이디</label>
+                <input type="text" id="user_id" name="user_id" required placeholder="아이디를 입력하세요">
+            </li>
+            <li>
+                <label for="pw">비밀번호</label>
+                <input type="password" id="pw" name="pw" required placeholder="비밀번호를 입력하세요">
+            </li>
+            <li>
+                <button type="submit" class="login-button">로그인</button>
+            </li>
+        </ul>
+    </form>
+</div>
+
+<%- include('footer.ejs') %> 

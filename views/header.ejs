@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>DataSolution 홈페이지</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
 
-
-    <h1> DataSolution의 홈페이지에 오신걸 환영합니다.</h1>
-   
-    <header style="border-bottom:1px solid #aaa;  margin-bottom:10px; padding-bottom:10px;  ">
+    <header>
         <nav>
-            <a href="/">홈</a> | 
-            <a href="/profile">프로필</a>  | 
-            <a href="/map">찾아오시는길</a>   |  
-            <a href="/contact">문의하기</a>  |  
-            <a href="/contactList">문의내용들</a>  |   
+            <a href="/" class="menu-item">홈</a>
+            <a href="/profile" class="menu-item">프로필</a>
+            <a href="/map" class="menu-item">찾아오시는길</a>
+            <a href="/contact" class="menu-item">문의하기</a>
+            <a href="/contactList" class="menu-item">문의내용들</a>
             
             <% if(user_id){ %> 
-                <%=name%>님 환영합니다. 
-                <a href="/logout">로그아웃</a>
-            <% }else{ %>
-                <a href="/login">로그인</a> 
-            <% } %> 
-
+                <span class="user-info"><%= name %>님 환영합니다.</span>
+                <a href="/logout" class="menu-item">로그아웃</a>
+            <% } else { %>
+                <a class="login-link menu-item" href="/login">로그인</a>
+            <% } %>
         </nav>
     </header>
+
+</body>
+</html>
