@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1> DataSolution의 홈페이지에 오신걸 환영합니다.</h1>
+   
+    <header style="border-bottom:1px solid #aaa;  margin-bottom:10px; padding-bottom:10px;  ">
+        <nav>
+            <a href="/">홈</a> | 
+            <a href="/profile">프로필</a>  | 
+            <a href="/map">찾아오시는길</a>   |  
+            <a href="/contact">문의하기</a>  |  
+            <a href="/contactList">문의내용들</a>  |   
+            
+            <% if(user_id){ %> 
+                <%=name%>님 환영합니다. 
+                <a href="/logout">로그아웃</a>
+            <% }else{ %>
+                <a href="/login">로그인</a> 
+            <% } %> 
+
+        </nav>
+    </header>
